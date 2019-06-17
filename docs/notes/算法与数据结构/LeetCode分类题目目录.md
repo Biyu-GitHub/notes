@@ -61,14 +61,14 @@
 
 ## 四、栈、队列、优先队列
 
-### 1 栈
+### 1. 栈
 
 * 栈的基础使用
   * [ ] [020. Valid Parentheses](<https://leetcode.com/problems/valid-parentheses/>)
   * [ ] [150. Evaluate Reverse Polish Notation](<https://leetcode.com/problems/evaluate-reverse-polish-notation/>)
   * [ ] [071. Simplify Path](<https://leetcode.com/problems/simplify-path/>)
 
-### 2 栈和递归的紧密关系
+### 2. 栈和递归的紧密关系
 
 * 二叉树的遍历
 
@@ -79,9 +79,10 @@
   - [ ] [145. Binary Tree Postorder Traversal](<https://leetcode.com/problems/binary-tree-postorder-traversal/>)
 
 * 练习
+  
   * [ ] [341. Flatten Nested List Iterator](<https://leetcode.com/problems/flatten-nested-list-iterator/>)
 
-### 3 队列
+### 3. 队列
 
 * 队列的基本应用-广度优先遍历
   - [ ] [102. Binary Tree Level Order Traversal](<https://leetcode.com/problems/binary-tree-level-order-traversal/>)
@@ -93,10 +94,21 @@
   - [ ] [127. Word Ladder](<https://leetcode.com/problems/word-ladder/>)
   - [ ] [126. Word Ladder II](<https://leetcode.com/problems/word-ladder-ii/>)
 
-### 4 优先队列
+### 4. 优先队列
 
 * 优先队列也是一种队列，底层使用堆来实现。统计频率，排序优先队列，O(nlogk)优先队列，O(nlog(n-k))
 * 347号题有3种解题思路统计频率，排序优先队列，O(nlogk)优先队列，O(nlog(n-k))
   * [ ] [347. Top K Frequent Elements](<https://leetcode.com/problems/top-k-frequent-elements/>)
   * [ ] [23. Merge k Sorted Lists](<https://leetcode.com/problems/merge-k-sorted-lists/>)
 
+## 五、二叉树和递归
+
+* [ ] [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
+* [ ] [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)
+* [ ] [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
+* [ ] [100. Same Tree](https://leetcode.com/problems/same-tree)
+* [ ] [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
+* [ ] [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)
+* [ ] [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)
+* [ ] [112. Path Sum](https://leetcode.com/problems/path-sum)
+* [ ] [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)
