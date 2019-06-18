@@ -246,3 +246,68 @@ class Solution2 {
 }
 ```
 
+## 二叉树和递归
+
+### 100. Same Tree
+
+```java
+class Solution {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == null)
+            return q == null;
+        if (q == null)
+            return p == null;
+
+        if (p.val == q.val)
+            return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+        else
+            return false;
+    }
+}
+```
+
+### 101. Symmetric Tree
+
+```java
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        if (root == null)
+            return true;
+        
+        return isSymmetric(root.left, root.right);
+    }
+
+    private boolean isSymmetric(TreeNode lNode, TreeNode rNode) {
+        if (lNode == null)
+            return rNode == null;
+        if (rNode == null)
+            return lNode == null;
+
+        if (lNode.val == rNode.val)
+            return isSymmetric(lNode.left, rNode.right) && isSymmetric(lNode.right, rNode.left);
+        else
+            return false;
+    }
+}
+```
+
+### 222. Count Complete Tree Nodes
+
+```java
+// 使用前序遍历
+class Solution {
+    private int ret;
+
+    public int countNodes(TreeNode root) {
+        if (root == null)
+            return 0;
+        
+        ret++;
+        countNodes(root.left);
+        countNodes(root.right);
+
+        return ret;
+    }
+}
+```
+
