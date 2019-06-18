@@ -64,9 +64,9 @@
 ### 1. 栈
 
 * 栈的基础使用
-  * [ ] [020. Valid Parentheses](<https://leetcode.com/problems/valid-parentheses/>)
-  * [ ] [150. Evaluate Reverse Polish Notation](<https://leetcode.com/problems/evaluate-reverse-polish-notation/>)
-  * [ ] [071. Simplify Path](<https://leetcode.com/problems/simplify-path/>)
+  * [x] [020. Valid Parentheses](<https://leetcode.com/problems/valid-parentheses/>)
+  * [x] [150. Evaluate Reverse Polish Notation](<https://leetcode.com/problems/evaluate-reverse-polish-notation/>)
+  * [x] [071. Simplify Path](<https://leetcode.com/problems/simplify-path/>)
 
 ### 2. 栈和递归的紧密关系
 
@@ -74,9 +74,9 @@
 
   可以使用递归、经典非递归、与模拟系统栈3种方法实现
 
-  - [ ] [144. Binary Tree Preorder Traversal](<https://leetcode.com/problems/binary-tree-preorder-traversal/>)
-  - [ ] [094. Binary Tree Inorder Traversal](<https://leetcode.com/problems/binary-tree-inorder-traversal/>)
-  - [ ] [145. Binary Tree Postorder Traversal](<https://leetcode.com/problems/binary-tree-postorder-traversal/>)
+  - [x] [144. Binary Tree Preorder Traversal](<https://leetcode.com/problems/binary-tree-preorder-traversal/>)
+  - [x] [094. Binary Tree Inorder Traversal](<https://leetcode.com/problems/binary-tree-inorder-traversal/>)
+  - [x] [145. Binary Tree Postorder Traversal](<https://leetcode.com/problems/binary-tree-postorder-traversal/>)
 
 * 练习
   
@@ -103,12 +103,23 @@
 
 ## 五、二叉树和递归
 
-* [ ] [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
-* [ ] [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)
-* [ ] [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
-* [ ] [100. Same Tree](https://leetcode.com/problems/same-tree)
-* [ ] [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
-* [ ] [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)
+* [x] [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
+* [x] [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)
+* [x] [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
+* [x] [100. Same Tree](https://leetcode.com/problems/same-tree)
+* [x] [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
+* [x] [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)
 * [ ] [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)
 * [ ] [112. Path Sum](https://leetcode.com/problems/path-sum)
 * [ ] [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves)
+* [ ] [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)
+* [ ] [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)
+* [ ] [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)
+* [ ] [437. Path Sum III](https://leetcode.com/problems/path-sum-iii)
+* [ ] [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+* [ ] [098. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
+* [ ] [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst)
+* [ ] [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)
+* [ ] [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
+* [ ] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
+
