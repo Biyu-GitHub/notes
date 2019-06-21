@@ -72,3 +72,25 @@ public class Solution {
 }
 ```
 
+## 旋转数组的最小数字
+
+* 暴力解法
+
+```java
+public class Solution {
+    public int minNumberInRotateArray(int[] array) {
+        int n = array.length;
+
+        if (n == 0)
+            return 0;
+
+        for (int i = 1; i < n; i++) {
+            if (array[i - 1] > array[i])
+                return array[i];
+        }
+
+        return array[0];
+    }
+}
+```
+
