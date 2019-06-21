@@ -14,7 +14,24 @@ public class TreeNode {
 }
 ```
 
-## Top 100 Liked Questions
+### 2. Definition for a Node
+
+```java
+class Node {
+    public int val;
+    public List<Node> children;
+
+    public Node() {
+    }
+
+    public Node(int _val, List<Node> _children) {
+        val = _val;
+        children = _children;
+    }
+}
+```
+
+## 一、Top 100 Liked Questions
 
 ### 448. Find All Numbers Disappeared in an Array
 
@@ -65,7 +82,7 @@ class Solution {
 
 
 
-## 栈，队列，和优先队列
+## 二、栈，队列，和优先队列
 
 ### 020. Valid Parenthesesentheses
 
@@ -246,7 +263,7 @@ class Solution2 {
 }
 ```
 
-## 二叉树和递归
+## 三、二叉树和递归
 
 ### 100. Same Tree
 
@@ -307,6 +324,45 @@ class Solution {
         countNodes(root.right);
 
         return ret;
+    }
+}
+```
+
+## 四、其他
+
+### 559. Maximum Depth of N-ary Tree
+
+```java
+class Solution {
+    public int maxDepth(Node root) {
+        if (root == null)
+            return 0;
+
+        int ret = 0;
+        for (Node child : root.children) {
+            ret = Math.max(ret, maxDepth(child));
+        }
+        return ret + 1;
+    }
+}
+```
+
+### 938. Range Sum of BST
+
+```java
+class Solution {
+    public int rangeSumBST(TreeNode root, int L, int R) {
+        int ret = 0;
+        if (root == null)
+            return 0;
+
+        if (root.val < L)
+            return rangeSumBST(root.right, L, R);
+        else if (root.val > R)
+            return rangeSumBST(root.left, L, R);
+        else {
+            return root.val + rangeSumBST(root.right, L, R) + rangeSumBST(root.left, L, R);
+        }
     }
 }
 ```
