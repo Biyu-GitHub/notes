@@ -94,3 +94,52 @@ public class Solution {
 }
 ```
 
+## 包含min函数的栈
+
+```java
+import java.util.Stack;
+
+public class Solution {
+    // 辅助栈
+    private Stack<Integer> stack;
+    private Stack<Integer> aux;
+	
+    // 构造函数
+    public Solution() {
+        stack = new Stack<>();
+        aux = new Stack<>();
+    }
+    
+	/**辅助栈为空，则直接入栈；
+     * 如果node小于辅助栈顶，直接入栈，
+     * 否则说明辅助栈顶的元素为最小，则再次入栈辅助栈顶元素，保持两个栈长度一致，
+     * 辅助栈栈栈顶元素最小
+     * */
+    public void push(int node) {
+        stack.push(node);
+
+        if (aux.isEmpty())
+            aux.push(node);
+        else {
+            if (node < aux.peek())
+                aux.push(node);
+            else
+                aux.push(aux.peek());
+        }
+    }
+
+    public void pop() {
+        stack.pop();
+        aux.pop();
+    }
+
+    public int top() {
+        return stack.peek();
+    }
+
+    public int min() {
+        return aux.peek();
+    }
+}
+```
+
