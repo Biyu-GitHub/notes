@@ -112,6 +112,10 @@ System.out.println("文件长度:" + f2.length() + "字节");
 | **字节流** | InputStream | OutputStream |
 | **字符流** |   Reader    |    Writer    |
 
+## 2.3 概览
+
+![IO_分类](../images/IO_分类.jpg)
+
 # 3. 字节流
 
 ## 3.1 字节输出流【OutputStream】
