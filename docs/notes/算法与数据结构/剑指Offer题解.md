@@ -143,3 +143,108 @@ public class Solution {
 }
 ```
 
+## 把二叉树打印成多行
+
+* 解法1：
+  * 新建类存储节点以及深度
+  * 使用队列进行层序遍历
+  * 根据深度加入到list中
+
+```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
+        ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
+        if (pRoot == null)
+            return ret;
+        Queue<Dict> queue = new LinkedList<>();
+        queue.add(new Dict(pRoot, 1));
+
+
+        while (!queue.isEmpty()) {
+            Dict dict = queue.remove();
+
+            int val = dict.node.val;
+            int level = dict.level;
+
+            if (level > ret.size())
+                ret.add(new ArrayList<>());
+            ret.get(level - 1).add(val);
+
+            if (dict.node.left != null)
+                queue.add(new Dict(dict.node.left, level + 1));
+            if (dict.node.right != null)
+                queue.add(new Dict(dict.node.right, level + 1));
+        }
+
+        return ret;
+
+    }
+
+    private class Dict {
+        private TreeNode node;
+        private int level;
+
+        public Dict(TreeNode node, int level) {
+            this.node = node;
+            this.level = level;
+        }
+    }
+}
+
+```
+
+* 解法2：带深度的递归
+  * 使用前序遍历，把不同层的节点从左到右放入到对应的list中
+
+```java
+public class Solution2 {
+    public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
+        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+
+        if (pRoot == null)
+            return list;
+
+        levelOrder(pRoot, 1, list);
+        return list;
+    }
+
+    private void levelOrder(TreeNode node, int depth, ArrayList<ArrayList<Integer>> list) {
+        if (node == null)
+            return;
+
+        if (depth > list.size())
+            list.add(new ArrayList<>());
+
+        list.get(depth - 1).add(node.val);
+
+        levelOrder(node.left, depth + 1, list);
+        levelOrder(node.right, depth + 1, list);
+    }
+}
+```
+
+## 对称的二叉树
+
+```java
+public class Solution {
+    boolean isSymmetrical(TreeNode pRoot) {
+        if (pRoot == null)
+            return true;
+
+        return isSymmetrical(pRoot.left, pRoot.right);
+    }
+
+    private boolean isSymmetrical(TreeNode l, TreeNode r) {
+        if (l == null)
+            return r == null;
+        if (r == null)
+            return false;
+
+        if (l.val == r.val) {
+            return isSymmetrical(l.left, r.right) && isSymmetrical(l.right, r.left);
+        } else
+            return false;
+    }
+}
+```
+
