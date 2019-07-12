@@ -133,3 +133,11 @@
 - [x] [120. Triangle](https://leetcode.com/problems/triangle)
 - [x] [064. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)
 
+**最优子结构：**通过求子问题的最优解，可以获得原问题的最优解。
+
+- [x] [343. Integer Break](https://leetcode.com/problems/integer-break)
+- [ ] [279. Perfect Squares](https://leetcode.com/problems/perfect-squares)
+- [ ] [091. Decode Ways](https://leetcode.com/problems/decode-ways)
+- [ ] [062. Unique Paths](https://leetcode.com/problems/unique-paths)
+- [ ] [063.Unique Paths II](https://leetcode.com/problems/unique-paths-ii)
+
