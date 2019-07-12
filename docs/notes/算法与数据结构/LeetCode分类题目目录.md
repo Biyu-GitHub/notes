@@ -123,3 +123,13 @@
 * [ ] [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
 * [ ] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
 
+## 七、动态规划基础
+
+**动态规划：**将原问题拆解成若干的子问题，同时保存子问题的答案使得每个子问题只求解一次，最终获得原问题的答案。
+
+![动态规划](../images/动态规划.jpg)
+
+- [x] [070. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
+- [x] [120. Triangle](https://leetcode.com/problems/triangle)
+- [x] [064. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)
+
