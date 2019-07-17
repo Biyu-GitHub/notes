@@ -25,5 +25,7 @@ hs_err_pid*
 
 *.ini
 *.drawio
-./docs/notes/code/剑指Offer题解/.idea/
-./docs/notes/code/设计模式/.idea/
+
+docs/notes/code/剑指Offer题解/.idea/
+docs/notes/code/设计模式/.idea/*.xml
+*.iml
