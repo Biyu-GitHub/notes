@@ -1,6 +1,7 @@
 # 🍍Java
 
 * [I/O](notes/Java/IO.md)
+* [GC](notes/Java/GC.md)
 * [JDBC](notes/Java/JDBC.md)
 
 # 🥝主流框架
