@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
+import java.util.UUID;
 
 public class UDPProvider {
 
@@ -32,7 +33,7 @@ public class UDPProvider {
                     // 接收消息
                     ds.receive(receivePack);
 
-                    // 发送端ip地址
+                    // 解析packet获得发送端的信息
                     String ip = receivePack.getAddress().getHostAddress();
                     int port = receivePack.getPort();
                     int dataLen = receivePack.getLength();
@@ -47,24 +48,21 @@ public class UDPProvider {
                         System.out.println("[Data] " + data);
 
                         // 回送消息
-                        String responseData = "Received data with len:" + dataLen;
+                        String responseData = MessageCreator.buildWithSn(sn);
                         DatagramPacket responcePacket = new DatagramPacket(
                                 responseData.getBytes(),
                                 responseData.getBytes().length,
                                 receivePack.getAddress(),
-                                receivePack.getPort()
+                                responsePort
                         );
 
                         ds.send(responcePacket);
-
-                        System.out.println("UDPProvider Closed.");
-                        ds.close();
                     }
                 }
-            } catch (SocketException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (Exception ignore) {
+            } finally {
+                System.out.println("UDPProvider Closed.");
+                close();
             }
 
         }
@@ -83,6 +81,11 @@ public class UDPProvider {
     }
 
     public static void main(String[] args) throws IOException {
+        String sn = UUID.randomUUID().toString();
+        Provider provider = new Provider(sn);
+        provider.start();
 
+        System.in.read();
+        provider.exit();
     }
 }
