@@ -25,8 +25,10 @@ hs_err_pid*
 
 *.ini
 *.drawio
-
 docs/notes/code/剑指Offer题解/.idea/
 docs/notes/code/设计模式/.idea/
 docs/notes/code/网络编程/.idea/
 docs/notes/code/Socket网络编程/.idea/
+docs/notes/code/剑指Java面试/.idea/
+
+*/.idea/*
