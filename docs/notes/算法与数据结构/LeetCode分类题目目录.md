@@ -123,6 +123,14 @@
 * [ ] [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
 * [ ] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
 
+## 六、递归和回溯
+
+- [ ] [017. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
+- [ ] [093. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)
+- [ ] [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)
+- [ ] [046. Permutations](https://leetcode.com/problems/permutations)
+- [ ] [047. Permutations II](https://leetcode.com/problems/permutations-ii)
+
 ## 七、动态规划基础
 
 **动态规划：**将原问题拆解成若干的子问题，同时保存子问题的答案使得每个子问题只求解一次，最终获得原问题的答案。
