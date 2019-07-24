@@ -8,5 +8,8 @@ public class Test {
 
         Shape shape3 = Factory.getProduct("Square");
         shape3.draw();
+
+        Circle circle = (Circle) Factory2.getClass(Circle.class);
+        circle.draw();
     }
 }
