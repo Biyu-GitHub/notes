@@ -1,12 +1,24 @@
 ## 一、数组中的问题其实最常见
 
+### 1. 如何写出正确的程序
+
+* 明确变量的含义
+* 明确循环不变量
+* 实现二分查找法
+
 - [x] [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 - [x] [027. Remove Element](https://leetcode.com/problems/remove-element/)
 - [x] [026. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
-- [ ] [080. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+- [x] [080. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+
+### 2. 基础算法思路的应用
+
 - [x] [075. Sort Colors](https://leetcode.com/problems/sort-colors/) 
 - [x] [088. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 - [x] [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) 
+
+### 3. 对撞指针
+
 - [x] [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 - [x] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [x] [344. Reverse String](https://leetcode.com/problems/reverse-string/)
