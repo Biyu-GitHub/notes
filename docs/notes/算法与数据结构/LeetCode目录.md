@@ -14,8 +14,12 @@
 ### 2. 基础算法思路的应用
 
 - [x] [075. Sort Colors](https://leetcode.com/problems/sort-colors/) 
+
 - [x] [088. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
-- [x] [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) 
+
+- [ ] [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) 
+
+  > 提示：快排，堆排，优先队列
 
 ### 3. 对撞指针
 
@@ -23,11 +27,18 @@
 - [x] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [x] [344. Reverse String](https://leetcode.com/problems/reverse-string/)
 - [x] [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
-- [x] [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- [x] [011. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+
+### 4. 滑动窗口
+
+* 滑动窗口为[l, r]，初始l = 0，r = -1代表滑动窗口中没有值
+
 - [x] [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 - [x] [003. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [ ] [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 - [ ] [076. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+> 对撞指针和滑动窗口还可以成为双索引技术。
 
 ## 二、查找表相关问题
 
