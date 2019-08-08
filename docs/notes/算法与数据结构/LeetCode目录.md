@@ -2,10 +2,6 @@
 
 ### 1. 如何写出正确的程序
 
-* 明确变量的含义
-* 明确循环不变量
-* 实现二分查找法
-
 - [x] [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 - [x] [027. Remove Element](https://leetcode.com/problems/remove-element/)
 - [x] [026. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
@@ -14,12 +10,8 @@
 ### 2. 基础算法思路的应用
 
 - [x] [075. Sort Colors](https://leetcode.com/problems/sort-colors/) 
-
 - [x] [088. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
-
 - [ ] [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) 
-
-  > 提示：快排，堆排，优先队列
 
 ### 3. 对撞指针
 
@@ -31,14 +23,10 @@
 
 ### 4. 滑动窗口
 
-* 滑动窗口为[l, r]，初始l = 0，r = -1代表滑动窗口中没有值
-
 - [x] [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 - [x] [003. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [ ] [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 - [ ] [076. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
-
-> 对撞指针和滑动窗口还可以成为双索引技术。
 
 ## 二、查找表相关问题
 
@@ -84,45 +72,36 @@
 
 ## 四、栈、队列、优先队列
 
-### 1. 栈
+### 1. 栈的基础使用
 
-* 栈的基础使用
-  * [x] [020. Valid Parentheses](<https://leetcode.com/problems/valid-parentheses/>)
-  * [x] [150. Evaluate Reverse Polish Notation](<https://leetcode.com/problems/evaluate-reverse-polish-notation/>)
-  * [x] [071. Simplify Path](<https://leetcode.com/problems/simplify-path/>)
+* [x] [020. Valid Parentheses](<https://leetcode.com/problems/valid-parentheses/>)
+* [x] [150. Evaluate Reverse Polish Notation](<https://leetcode.com/problems/evaluate-reverse-polish-notation/>)
+* [x] [071. Simplify Path](<https://leetcode.com/problems/simplify-path/>)
 
 ### 2. 栈和递归的紧密关系
 
-* 二叉树的遍历
+- [x] [144. Binary Tree Preorder Traversal](<https://leetcode.com/problems/binary-tree-preorder-traversal/>)
+- [x] [094. Binary Tree Inorder Traversal](<https://leetcode.com/problems/binary-tree-inorder-traversal/>)
+- [x] [145. Binary Tree Postorder Traversal](<https://leetcode.com/problems/binary-tree-postorder-traversal/>)
+- [ ] [341. Flatten Nested List Iterator](<https://leetcode.com/problems/flatten-nested-list-iterator/>)
 
-  可以使用递归、经典非递归、与模拟系统栈3种方法实现
+### 3. 队列的基本应用-广度优先遍历
 
-  - [x] [144. Binary Tree Preorder Traversal](<https://leetcode.com/problems/binary-tree-preorder-traversal/>)
-  - [x] [094. Binary Tree Inorder Traversal](<https://leetcode.com/problems/binary-tree-inorder-traversal/>)
-  - [x] [145. Binary Tree Postorder Traversal](<https://leetcode.com/problems/binary-tree-postorder-traversal/>)
+- [ ] [102. Binary Tree Level Order Traversal](<https://leetcode.com/problems/binary-tree-level-order-traversal/>)
+- [ ] [107. Binary Tree Level Order Traversal II](<https://leetcode.com/problems/binary-tree-level-order-traversal-ii/>)
+- [ ] [103. Binary Tree Zigzag Level Order Traversal](<https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/>)
+- [ ] [199. Binary Tree Right Side View](<https://leetcode.com/problems/binary-tree-right-side-view/>)
 
-* 练习
-  
-  * [ ] [341. Flatten Nested List Iterator](<https://leetcode.com/problems/flatten-nested-list-iterator/>)
+### 4. BFS和图的最短路径
 
-### 3. 队列
+- [ ] [279. Perfect Squares](<https://leetcode.com/problems/perfect-squares/>)
+- [ ] [127. Word Ladder](<https://leetcode.com/problems/word-ladder/>)
+- [ ] [126. Word Ladder II](<https://leetcode.com/problems/word-ladder-ii/>)
 
-* 队列的基本应用-广度优先遍历
-  - [ ] [102. Binary Tree Level Order Traversal](<https://leetcode.com/problems/binary-tree-level-order-traversal/>)
-  - [ ] [107. Binary Tree Level Order Traversal II](<https://leetcode.com/problems/binary-tree-level-order-traversal-ii/>)
-  - [ ] [103. Binary Tree Zigzag Level Order Traversal](<https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/>)
-  - [ ] [199. Binary Tree Right Side View](<https://leetcode.com/problems/binary-tree-right-side-view/>)
-* BFS和图的最短路径
-  - [ ] [279. Perfect Squares](<https://leetcode.com/problems/perfect-squares/>)
-  - [ ] [127. Word Ladder](<https://leetcode.com/problems/word-ladder/>)
-  - [ ] [126. Word Ladder II](<https://leetcode.com/problems/word-ladder-ii/>)
+### 5. 优先队列
 
-### 4. 优先队列
-
-* 优先队列也是一种队列，底层使用堆来实现。统计频率，排序优先队列，O(nlogk)优先队列，O(nlog(n-k))
-* 347号题有3种解题思路统计频率，排序优先队列，O(nlogk)优先队列，O(nlog(n-k))
-  * [ ] [347. Top K Frequent Elements](<https://leetcode.com/problems/top-k-frequent-elements/>)
-  * [ ] [23. Merge k Sorted Lists](<https://leetcode.com/problems/merge-k-sorted-lists/>)
+* [ ] [347. Top K Frequent Elements](<https://leetcode.com/problems/top-k-frequent-elements/>)
+* [ ] [23. Merge k Sorted Lists](<https://leetcode.com/problems/merge-k-sorted-lists/>)
 
 ## 五、二叉树和递归
 
@@ -158,14 +137,12 @@
 
 **动态规划：**将原问题拆解成若干的子问题，同时保存子问题的答案使得每个子问题只求解一次，最终获得原问题的答案。
 
-![动态规划](../images/动态规划.jpg)
+**最优子结构：**通过求子问题的最优解，可以获得原问题的最优解。
 
+![动态规划](../images/动态规划.jpg)
 - [x] [070. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
 - [x] [120. Triangle](https://leetcode.com/problems/triangle)
 - [x] [064. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)
-
-**最优子结构：**通过求子问题的最优解，可以获得原问题的最优解。
-
 - [x] [343. Integer Break](https://leetcode.com/problems/integer-break)
 - [ ] [279. Perfect Squares](https://leetcode.com/problems/perfect-squares)
 - [ ] [091. Decode Ways](https://leetcode.com/problems/decode-ways)
