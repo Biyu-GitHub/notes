@@ -172,3 +172,8 @@
 - [ ] [062. Unique Paths](https://leetcode.com/problems/unique-paths)
 - [ ] [063.Unique Paths II](https://leetcode.com/problems/unique-paths-ii)
 
+## 八、贪心算法
+
+- [ ] [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies)
+- [ ] [392. 判断子序列](https://leetcode-cn.com/problems/is-subsequence)
+- [ ] [435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals)
