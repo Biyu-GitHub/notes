@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * 稠密图--邻接矩阵
  */
@@ -12,5 +14,13 @@ public class DenseGraph {
         this.n = n;
         this.directed = directed;
         g = new boolean[n][n];
+        Arrays.fill(g, false);
+    }
+
+    public int V() {
+        return n;
+    }
+    public int E () {
+        return m;
     }
 }
