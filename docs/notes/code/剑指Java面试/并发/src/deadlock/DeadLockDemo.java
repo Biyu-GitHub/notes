@@ -1,3 +1,5 @@
+package deadlock;
+
 public class DeadLockDemo {
     private static Object resource1 = new Object();//资源 1
     private static Object resource2 = new Object();//资源 2
