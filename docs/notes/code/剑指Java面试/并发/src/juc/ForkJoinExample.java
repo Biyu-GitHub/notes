@@ -1,7 +1,7 @@
 /**
  * 主要用于并行计算中，和 MapReduce 原理类似，都是把大的计算任务拆分成多个小任务并行计算。
  */
-package forkjoin;
+package juc;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;

@@ -22,6 +22,6 @@ public enum Singleton {
         instance1.setObjName("2");
         System.out.println(instance1.getObjName());
 
-        System.out.println(instance1.getObjName());
+        System.out.println(instance2.getObjName());
     }
 }
