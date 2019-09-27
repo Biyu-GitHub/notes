@@ -27,3 +27,6 @@ hs_err_pid*
 *.drawio
 *.iml
 *.idea/
+docs/notes/code/主流框架/rabbitmq/mvnw
+docs/notes/code/主流框架/rabbitmq/mvnw
+*.kotlin_module
