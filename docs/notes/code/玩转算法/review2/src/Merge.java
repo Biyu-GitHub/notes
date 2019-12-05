@@ -23,10 +23,18 @@ public class Merge implements Sort {
         int j = m + 1;
 
         for (int k = l; k <= r; k++) {
-            if (i > m) nums[k] = aux[j++];
-            else if (j <= m) nums[k] = aux[i++];
-            else if (aux[i] <= aux[j]) nums[k] = aux[i++];
-            else nums[k] = aux[j++];
+
+            if (i > m)
+                nums[k] = aux[j++];
+
+            else if (j > l)
+                nums[k] = aux[i++];
+
+            else if (aux[i] <= aux[j])
+                nums[k] = aux[i++];
+
+            else
+                nums[k] = aux[j++];
         }
     }
 }
