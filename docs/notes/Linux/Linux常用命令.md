@@ -55,3 +55,46 @@ grep "partial\[true\]" a.java | grep -o "engin\[[0-9A-Z]\]"
 # 在查找结果中，过滤掉(不显示)包含"xxx"的数据
 grep "partial\[true\]" a.java | grep -v "xxx"
 ```
+
+# 统计文件内容
+
+* awk
+  * 一次读取一行文本，按照输入的分隔符进行切片，切成多个组成部分
+  * 将切片直接保存在内建的变量中，$1，$2...（$0表示行的全部）
+  * 支持对单个切片的判断，支持循环判断，默认分隔符为空格
+
+```bash
+# 按照空格分隔，并打印2，3，4列
+➜  Desktop awk '{print $2, $3, $4}' target2.txt
+you I love
+
+# 打印第二列为you的行的第2，3，4列
+➜  Desktop awk '$2=="you"{print $2, $3, $4}' target2.txt
+you I love
+
+# 打印第二列为I或者打印第一行，NR代表第几行
+➜  Desktop awk '$2=="I" || NR==1 {print $2, $3, $4}' target2.txt
+you I love
+
+# 使用-F指定分隔符
+➜  Desktop awk -F "," '{print $1}' target2.txt                  
+you you I love you asdfadyouasdfasdf
+```
+
+# 批量替换文本内容
+
+* sed：流编辑器（Stream Editor）
+
+```bash
+# 将每行开头的Str替换成String
+# -i：将修改保存到原文件，否则只打印到终端显示而不修改文件
+# 's///g'：s代表操作字符串，g代表进行全文替换，如果不加g，则只替换每行中的第一个
+sed -i 's/^Str/String/g' target.txt
+```
+
+```bash
+# 删除符合条件的行
+sed -i '/String/d' target.txt
+# 删除空行
+sed -i '/^ *$/d' target.txt
+```

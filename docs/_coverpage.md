@@ -1,4 +1,4 @@
-![logo](./notes/images/logo_small.png)
+![logo](./notes/Image/logo_small.png)
 
 关于平时学习和工作的记录，包括Java与深度学习相
 

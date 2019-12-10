@@ -112,11 +112,7 @@ try {
 
 # 附录
 
-## 1. 驱动jar包下载
-
-![驱动jar包下载](../images/JDBC_download_mysql_jar.png)
-
-## 2. 乱码问题
+## 1. 乱码问题
 
 ```sql
 -- 修改mysql全局时区为北京时间，即我们所在的东8区
